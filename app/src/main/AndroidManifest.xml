@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arfsans.icare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@drawable/test"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/test"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ICare">
+        <activity android:name=".activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.DetailLocationActivity" />
+        <activity android:name=".activities.DrugStoreActivity" />
+        <activity android:name=".activities.DoctorActivity" />
+        <activity android:name=".activities.HospitalActivity" />
+        <activity android:name=".activities.PharmacyActivity" />
+        <activity android:name=".activities.MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDMtB5SOeUTODDL1GNvHV49D28NN5G-HJU" />
+    </application>
+
+</manifest>
